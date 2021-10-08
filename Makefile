@@ -14,4 +14,4 @@ lint:
 	npx eslint .
 
 prettier:
-	prettier --write .
+	npx prettier --write .
