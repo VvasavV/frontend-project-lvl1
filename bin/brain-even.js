@@ -1,8 +1,6 @@
 #!/usr/bin/end node
 
-import { greet } from '../src/cli';
-import evenGameProcess from '../src/even-game-process';
+import evenGame from "../src/games/even-game.js";
+import play from "../src/index.js";
 
-const playerName = greet();
-
-evenGameProcess(playerName);
+play(evenGame);

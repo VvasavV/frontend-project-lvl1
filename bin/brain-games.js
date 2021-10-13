@@ -1,5 +1,6 @@
 #!/usr/bin/end node
 
-import { greet } from '../src/cli.js';
+import emptyGame from "../src/games/empty-game.js";
+import play from "../src/index.js";
 
-greet();
+play(emptyGame);
