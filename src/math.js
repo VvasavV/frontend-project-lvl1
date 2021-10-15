@@ -32,3 +32,11 @@ export const calculate = (str) => {
       return NaN;
   }
 };
+
+export const gcd = (a, b) => {
+  if (b === 0) {
+    return a;
+  }
+
+  return gcd(b, a % b);
+};
