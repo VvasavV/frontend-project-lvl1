@@ -11,7 +11,7 @@ export function gameCycle(playerName, getTask, getCorrectAnswer) {
 
   const correctAnswer = getCorrectAnswer(task);
 
-  if (answer === correctAnswer) {
+  if (answer == correctAnswer) {
     return true;
   }
 
