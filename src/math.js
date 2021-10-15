@@ -9,24 +9,24 @@ export const getRandomIntInclusive = (min, max) => {
 };
 
 export const getRandomInt = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
+  const ceiledMin = Math.ceil(min);
+  const flooredMax = Math.floor(max);
 
-  //Максимум не включается, минимум включается
-  return Math.floor(Math.random() * (max - min)) + min;
+  // Максимум не включается, минимум включается
+  return Math.floor(Math.random() * (flooredMax - ceiledMin)) + ceiledMin;
 };
 
 export const calculate = (str) => {
-  const [a, operation, b] = str.split(" ");
+  const [a, operation, b] = str.split(' ');
   const x = Number(a);
   const y = Number(b);
 
   switch (operation) {
-    case "+":
+    case '+':
       return x + y;
-    case "-":
+    case '-':
       return x - y;
-    case "*":
+    case '*':
       return x * y;
     default:
       return NaN;

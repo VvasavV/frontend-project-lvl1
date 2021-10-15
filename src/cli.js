@@ -1,13 +1,13 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 export function getAnswer(question) {
   return readlineSync.question(question);
 }
 
 export function greet() {
-  console.log("Welcome to the Brain Games!");
+  console.log('Welcome to the Brain Games!');
 
-  const name = getAnswer("May I have your name? ");
+  const name = getAnswer('May I have your name? ');
 
   console.log(`Hello, ${name}!`);
 

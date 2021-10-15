@@ -3,7 +3,7 @@ const game = (playerName, description, gameCycle) => {
 
   for (let i = 0; i < 3; i += 1) {
     if (gameCycle(playerName)) {
-      console.log("Correct!");
+      console.log('Correct!');
     } else {
       return;
     }

@@ -1,14 +1,14 @@
-import { getRandomIntInclusive, getRandomInt, calculate } from "../math.js";
-import { gameCycle } from "../game-cycle.js";
+import { getRandomIntInclusive, getRandomInt, calculate } from '../math.js';
+import gameCycle from '../game-cycle.js';
 
 const indexToOperation = (index) => {
   switch (index) {
     case 1:
-      return "-";
+      return '-';
     case 2:
-      return "*";
+      return '*';
     default:
-      return "+";
+      return '+';
   }
 };
 
@@ -23,7 +23,6 @@ const getCalcTask = () => {
 
 const getCalcCorrectAnswer = (task) => calculate(task);
 
-const calcCycle = (playerName) =>
-  gameCycle(playerName, getCalcTask, getCalcCorrectAnswer);
+const calcCycle = (playerName) => gameCycle(playerName, getCalcTask, getCalcCorrectAnswer);
 
 export default calcCycle;

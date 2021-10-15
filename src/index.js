@@ -1,4 +1,4 @@
-import { greet } from "../src/cli.js";
+import { greet } from './cli.js';
 
 const play = (game) => {
   const playerName = greet();

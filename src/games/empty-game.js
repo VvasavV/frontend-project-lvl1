@@ -1,3 +1,3 @@
-const emptyGame = (playerName) => {};
+const emptyGame = () => {};
 
 export default emptyGame;
