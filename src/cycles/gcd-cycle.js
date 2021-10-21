@@ -12,7 +12,7 @@ const getGcdCorrectAnswer = (task) => {
   const values = task.split(' ');
 
   return gcd(Number(values[0]), Number(values[1]));
-}
+};
 
 const gcdCycle = (playerName) => gameCycle(playerName, getGcdTask, getGcdCorrectAnswer);
 
