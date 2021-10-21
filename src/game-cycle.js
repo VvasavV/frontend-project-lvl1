@@ -8,8 +8,9 @@ export default function gameCycle(playerName, getTask, getCorrectAnswer) {
   const answer = getAnswer('Your answer: ');
 
   console.log(`Your answer: ${answer}!`);
+  const ans = getCorrectAnswer(task);
 
-  const correctAnswer = String(getCorrectAnswer(task));
+  const correctAnswer = String(ans);
 
   if (answer === correctAnswer) {
     return true;
